@@ -1,0 +1,30 @@
+.cv-header {
+    background-color: rgb(175, 231, 233);
+    width: 100%;
+    border: 2px solid #033245;
+    color: #033245;
+}
+
+.picture {
+    text-align: right;
+}
+
+h2 {
+    background-color: rgb(175, 231, 233);
+    color: #033245;
+}
+
+section {
+    background-color: rgb(248, 230, 222);
+}
+
+footer {
+    background-color: rgb(175, 231, 233);
+    width: 100%;
+    border: 2px solid #033245;
+    color: #033245;
+}
+
+.position {
+    text-decoration: underline;
+}
