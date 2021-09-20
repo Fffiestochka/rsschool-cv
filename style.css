@@ -28,3 +28,9 @@ footer {
 .position {
     text-decoration: underline;
 }
+
+main {
+    margin-left: auto;
+    margin-right: auto;
+    
+}
