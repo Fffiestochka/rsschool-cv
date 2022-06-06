@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icons';
-  src:  url('./fonts/icons.eot?c3foha');
-  src:  url('./fonts/icons.eot?c3foha#iefix') format('embedded-opentype'),
-    url('./fonts/icons.ttf?c3foha') format('truetype'),
-    url('./fonts/icons.woff?c3foha') format('woff'),
-    url('./fonts/icons.svg?c3foha#icons') format('svg');
+  src:  url('./assets/fonts/icons.eot?c3foha');
+  src:  url('./assets/fonts/icons.eot?c3foha#iefix') format('embedded-opentype'),
+    url('./assets/fonts/icons.ttf?c3foha') format('truetype'),
+    url('./assets/fonts/icons.woff?c3foha') format('woff'),
+    url('./assets/fonts/icons.svg?c3foha#icons') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -28,27 +28,27 @@
 .icon-location:before {
   content: "\e900";
   font-weight: 800;
-  font-size: 30px;
+  font-size: 25px;
 }
 .icon-email:before {
   content: "\e901";
   font-weight: 800;
-  font-size: 30px;
+  font-size: 25px;
 }
 .icon-github:before {
   content: "\e902";
   font-weight: 800;
-  font-size: 30px;
+  font-size: 25px;
 }
 .icon-telegram:before {
   content: "\e903";
   font-weight: 800;
-  font-size: 30px;
+  font-size: 25px;
 }
 .icon-discord:before {
   content: "\e904";
   font-weight: 800;
-  font-size: 30px;
+  font-size: 25px;
 }
 .icon-printer:before {
   content: "\e905";
@@ -56,5 +56,5 @@
 .icon-placeholder:before {
   content: "\e906";
   font-weight: 800;
-  font-size: 30px;
+  font-size: 25px;
 }
