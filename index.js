@@ -1,3 +1,4 @@
+'use strict';
 // Scroll-to-up button
 
 const scrollToTop = document.getElementById('scroll-to-top');
@@ -5,7 +6,7 @@ let datashow = false;
 
 window.addEventListener('scroll', () => {
   if (window.scrollY > 50 && !datashow) {
-    scrollToTop.setAttribute ('data-show', 'true');
+    scrollToTop.setAttribute('data-show', 'true');
     datashow = true;
   }
 
@@ -18,30 +19,37 @@ window.addEventListener('scroll', () => {
     window.scrollTo({
       top: 0,
       behaviar: 'smooth',
-    })
+    });
   });
-})
+});
 
 // Menu-hamburger
 
-const iconHamburger = document.querySelector(".hamburger-icon");
-const hamburgerBody = document.querySelector(".hamburger-content");
-if (iconHamburger) {
-  iconHamburger.addEventListener("click", function (e) {
-    document.body.classList.toggle("_lock");
-    iconHamburger.classList.toggle("_open");
-    hamburgerBody.classList.toggle("_open");
-  });
+const hamburger = document.querySelector('.hamburger-icon');
+const navBody = document.querySelector('.nav-list');
+const div = document.createElement('div');
+const overlay = document.createElement('div');
+
+function toggleMenu() {
+  hamburger.classList.toggle('open');
+  navBody.classList.toggle('open');
+  document.body.classList.toggle('lock');
+  overlay.classList.toggle('overlay');
+  document.body.append(overlay);
 }
 
-function closeMenu(event) {
-  // функция закрытия
-  if (event.target.classList.contains("nav-link__hamburger")) {
-    // если место, по кот.кликнули, сод.ссылку
-    document.body.classList.remove("_lock");
-    iconHamburger.classList.remove("_open");
-    hamburgerBody.classList.remove("_open");
-  }
-}
-hamburgerBody.addEventListener("click", closeMenu); // при клике на тело меню  - функция закрытия
+hamburger.addEventListener('click', toggleMenu);
+overlay.addEventListener('click', toggleMenu);
 
+
+function closeMenu() {
+  hamburger.classList.remove('open');
+  navBody.classList.remove('open');
+  document.body.classList.remove('lock');
+  overlay.classList.remove('overlay');
+}
+
+const navLinks = document.querySelectorAll('.nav-link');
+
+navLinks.forEach((el) => el.addEventListener('click', closeMenu));
+overlay.addEventListener('click', closeMenu);
