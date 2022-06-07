@@ -391,6 +391,35 @@ figcaption {
   width: 100%;
 }
 
+#scroll-to-top {
+  position: fixed;
+  bottom: 100px;
+  right: 48px;
+  padding: 15px 19px;
+  border-radius: 8px;
+  box-shadow: 0 4px 24px rgba(75, 0, 0, 0.75);
+  transition-property: background, color, bottom, opacity, visibility;
+  /* transition-duration: 0.3s; */
+}
+#scroll-to-top[data-show="false"] {
+  bottom: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+#scroll-to-top svg {
+  color: #000;
+  height: 24px;
+  width: 24px;
+}
+#scroll-to-top:hover {
+  cursor: pointer;
+  background: rgb(78, 0, 0);
+  color: #d4ccc6;
+}
+/* #scroll-to-top:hover svg {
+  color: #d4ccc6;
+} */
+
 @media (max-width: 1200px) {
   .contact-list {
     padding-left: 0;
