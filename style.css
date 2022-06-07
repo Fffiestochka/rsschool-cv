@@ -14,7 +14,7 @@ font-family: 'PT Sans', sans-serif;*/
   flex-direction: column;
   max-width: 1440px;
   margin: 0 auto;
-  font-family: 'Fira Sans', sans-serif;
+  font-family: 'Fira Sans', 'Arial', sans-serif;
   min-height: 100vh;
   padding: 0;
   display: flex;
@@ -179,7 +179,7 @@ pre {
   border-radius: 5px;
 }
 .main-title {
-  font-family: 'Merriweather Sans', sans-serif;
+  font-family: 'Merriweather Sans', 'Arial', sans-serif;
   margin: 0;
   font-size: 70px;
   font-weight: 400;
@@ -193,7 +193,7 @@ pre {
   letter-spacing: 0.06rem;
 }
 .section-title {
-  font-family: 'Merriweather Sans', sans-serif;
+  font-family: 'Merriweather Sans', 'Arial', sans-serif;
   font-size: 20px;
   font-weight: 400;
   text-transform: uppercase;
@@ -201,6 +201,9 @@ pre {
   /* background-color: rgb(175, 231, 233); */
   width: 100%;
   color: #1a1c1d;
+}
+.title-contacts {
+  display: none;
 }
 .skills-list {
   list-style: none;
@@ -357,7 +360,7 @@ figcaption {
   background-color: #4e0000;
   color: #d4ccc6;
   font-size: 14px;
-  font: 'PT Sans', sans-serif;
+  font: 'PT Sans', 'Arial', sans-serif;
   padding: 3px;
   text-align: center;
 }
@@ -388,71 +391,6 @@ figcaption {
   width: 100%;
 }
 
-@media print {
-  .cv-header {
-    display: none;
-  }
-  .footer {
-    display: none;
-  }
-  .section__video {
-    display: none;
-  }
-  .section__projects {
-    display: none;
-  }
-  .section__education {
-    order: 6;
-    padding-right: 30px;
-  }
-  .contact-list {
-    padding-left: 0;
-  }
-  .profile-photo {
-    width: 100px;
-    height: 100px;
-    position: static;
-    transform: translate(0%);
-    display: block;
-  }
-  .main-title {
-    font-size: 35px;
-    padding-left: 30px;
-  }
-  .section__profile {
-    display: flex;
-    justify-content: center;
-  }
-  .wrapper {
-    font-size: 14px;
-  }
-  code {
-    font-size: 12px;
-  }
-  .section-title {
-    margin: 5px 0;
-    font-size: 16px;
-  }
-  section {
-    padding-top: 0;
-    padding-bottom: 0px;
-  }
-  .container {
-    display: grid;
-    grid-template-columns: 40% 60%;
-    grid-template-rows: repeat(5, auto);
-    gap: 0px;
-  }
-  .experience-line .organization {
-    padding-left: 10px;
-  }
-  .skills-list {
-    padding-left: 20px;
-  }
-  .organization {
-    font-size: 16px;
-  }
-}
 @media (max-width: 1200px) {
   .contact-list {
     padding-left: 0;
@@ -541,7 +479,7 @@ figcaption {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(9, auto);
   }
-.section__profile {
+  .section__profile {
     order: 1;
     grid-column: 1 / 2;
     display: flex;
@@ -584,5 +522,114 @@ figcaption {
   }
   .main-title {
     font-size: 30px;
+  }
+}
+
+@media print {
+  html,
+  body {
+    height: 297mm;
+    width: 210mm;
+  }
+  *,
+  *:before,
+  *:after {
+    color: #000;
+    box-shadow: none;
+    text-shadow: none;
+  }
+  .cv-header {
+    display: none;
+  }
+  .footer {
+    display: none;
+  }
+  .section__video {
+    display: none;
+  }
+  .section__projects {
+    display: none;
+  }
+
+  .section__profile {
+    order: 2;
+    display: flex;
+    justify-content: center;
+    grid-column: 2 / 3;
+  }
+  .section__contacts {
+    order: 1;
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+  }
+  .section__about-me {
+    order: 3;
+    grid-column: 2 / 3;
+  }
+  .section__skills {
+    order: 4;
+    grid-column: 1 / 2;
+  }
+  .section__code {
+    order: 5;
+    grid-column: 2 / 3;
+  }
+  .section__experience {
+    order: 7;
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
+  }
+  .section__education {
+    order: 6;
+    padding-right: 30px;
+  }
+
+
+  .contact-list {
+    padding-left: 0;
+  }
+  .profile-photo {
+    width: 100px;
+    height: 100px;
+    position: static;
+    transform: translate(0%);
+    display: block;
+  }
+  .main-title {
+    font-size: 35px;
+    padding-left: 30px;
+  }
+  .wrapper {
+    font-size: 14px;
+  }
+  code {
+    font-size: 12px;
+  }
+  .section-title {
+    margin: 5px 0;
+    font-size: 16px;
+  }
+  section {
+    padding-top: 0;
+    padding-bottom: 0px;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: repeat(5, auto);
+    gap: 0px;
+  }
+  .experience-line .organization {
+    padding-left: 10px;
+  }
+  .skills-list {
+    padding-left: 20px;
+  }
+  .organization {
+    font-size: 16px;
+  }
+  .skill__bar div {
+    -webkit-print-color-adjust: exact !important;
+    color-adjust: exact !important;
   }
 }
