@@ -80,9 +80,9 @@ main {
   padding-left: 20px;
   padding-right: 20px;
 }
-/* .lang-switch {
+.lang-switch {
   display: none;
-} */
+}
 .icon-printer {
   cursor: pointer;
 }
@@ -327,8 +327,11 @@ pre {
 }
 .rss-icon {
   width: 100px;
+  height: 30px;
+  background: no-repeat url(./assets/svg/rs_school_js.svg);
   cursor: pointer;
 }
+
 .position {
   text-decoration: underline;
   font-size: 16px;
