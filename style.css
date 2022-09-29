@@ -22,7 +22,7 @@ body.lock {
   flex-direction: column;
   max-width: 1440px;
   margin: 0 auto;
-  font-family: "Hind", "Arial", sans-serif;
+  font-family: 'Hind', 'Arial', sans-serif;
   min-height: 100vh;
   padding: 0;
   display: flex;
@@ -445,6 +445,19 @@ figcaption {
   background: rgb(78, 0, 0);
   color: #d4ccc6;
 }
+.rss-cert {
+  display: block;
+  width: 100%;
+  max-width: 500px;
+  border: 1px solid #4e0000;
+  border-radius: 5px;
+}
+.rss-cert img {
+  display: block;
+  width: 100%;
+  max-width: 500px;
+  border-radius: 5px;
+}
 /* #scroll-to-top:hover svg {
   color: #d4ccc6;
 } */
@@ -770,6 +783,9 @@ figcaption {
     color-adjust: exact !important;
   }
   #scroll-to-top {
+    display: none;
+  }
+  .rss-cert {
     display: none;
   }
 }

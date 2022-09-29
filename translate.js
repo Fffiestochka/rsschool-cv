@@ -20,6 +20,11 @@ const translate = {
     'section-title-projects': 'Projects',
     'project-portfolio': 'Portfolio',
     'project-shelter': 'Shelter',
+    'project-travel': 'Travel',
+    'project-momentum': 'Momentum (copy)',
+    'project-eldritch': 'Eldritch shuffle',
+    'project-zoo': 'Petstory',
+
     'project-keyboard': 'Keyboard',
     'project-slider': 'CSS slider',
     'section-title-experience': 'Experience',
@@ -49,6 +54,8 @@ const translate = {
       'Kozma Minin Nizhny Novgorod State Pedagogical University (2012-2015)',
     'ngpu-speciality':
       'Specialty "Pre-school pedagogy and psychology", qualification "Teacher of pre-school pedagogy and psychology", specialization "Development and correction of speech"',
+    'rss-organization': 'Rolling Scopes School (2021-now)',
+    'rss-speciality': 'Frontend developer',
   },
   rus: {
     'nav-contacts': 'Контакты',
@@ -71,6 +78,11 @@ const translate = {
     'section-title-projects': 'Проекты',
     'project-portfolio': 'Портфолио',
     'project-shelter': 'Приют',
+    'project-travel': 'Путешествие',
+    'project-momentum': 'Momentum (копия)',
+    'project-eldritch': 'Eldritch замес',
+    'project-zoo': 'Petstory',
+
     'project-keyboard': 'Клавиатура',
     'project-slider': 'CSS слайдер',
     'section-title-experience': 'Опыт работы',
@@ -99,6 +111,9 @@ const translate = {
     'ngpu-organization': 'НГПУ им. К.Минина (2012-2015)',
     'ngpu-speciality':
       'Специальность «Дошкольная педагогика и психология», квалификация «Преподаватель дошкольной педагогики и психологии», специализация «Развитие и коррекция речи»',
+
+    'rss-organization': 'Rolling Scopes School (2021-н.в.)',
+    'rss-speciality': 'Frontend разработчик',
   },
 };
 
