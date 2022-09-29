@@ -1,5 +1,5 @@
 const translate = {
-  'eng': {
+  eng: {
     'nav-contacts': 'Contacts',
     'nav-about': 'About me',
     'nav-skills': 'Skills',
@@ -23,7 +23,7 @@ const translate = {
     'project-keyboard': 'Keyboard',
     'project-slider': 'CSS slider',
     'section-title-experience': 'Experience',
-    'alfa-organization': 'Alfa-Service LLC (2019-now)',
+    'alfa-organization': 'Alfa-Service LLC (outsourcing for Intel) (2019-now)',
     'alfa-position': 'Logistic coordinator:',
     'alfa-duties': 'electronics import and export coordination.',
     'niro-organization':
@@ -50,7 +50,7 @@ const translate = {
     'ngpu-speciality':
       'Specialty "Pre-school pedagogy and psychology", qualification "Teacher of pre-school pedagogy and psychology", specialization "Development and correction of speech"',
   },
-  'rus': {
+  rus: {
     'nav-contacts': 'Контакты',
     'nav-about': 'Обо мне',
     'nav-skills': 'Навыки',
@@ -74,7 +74,7 @@ const translate = {
     'project-keyboard': 'Клавиатура',
     'project-slider': 'CSS слайдер',
     'section-title-experience': 'Опыт работы',
-    'alfa-organization': 'ООО Альфа Сервис (2019-н.в.)',
+    'alfa-organization': 'ООО Альфа Сервис (для компании Intel) (2019-н.в.)',
     'alfa-position': 'Логист координатор:',
     'alfa-duties': 'координация импорта и экспорта электроники.',
     'niro-organization':
